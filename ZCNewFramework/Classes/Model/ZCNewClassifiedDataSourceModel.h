@@ -11,7 +11,7 @@
 @interface ZCNewClassifiedDataSourceModel : NSObject
 
 @property (nonatomic, copy) NSString *name_en;
-@property (nonatomic, copy) NSString *name_zc;
+@property (nonatomic, copy) NSString *name_zh;
 @property (nonatomic, copy) NSString *app;
 @property (nonatomic, copy) NSString *path;
 @property (nonatomic, assign) NSInteger rank;

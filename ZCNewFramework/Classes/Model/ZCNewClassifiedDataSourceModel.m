@@ -18,7 +18,7 @@
     if (self = [super init]) {
         
         self.name_en = dic[@"name_en"];
-        self.name_zc = dic[@"name_zc"];
+        self.name_zh = dic[@"name_zh"];
         self.app     = dic[@"app"];
         self.path    = dic[@"path"];
         self.rank    = [dic[@"rank"] integerValue];

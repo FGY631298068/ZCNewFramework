@@ -37,7 +37,7 @@ static ClassifiedSectionModel *model = nil;
 - (void)classifiedSectionData:(void(^)(NSArray *))dataArray{
     
     [ZCNewsRequest getRequestWithUrl:CH_Server(@"/entries?app=assistant") parameters:nil finishBlock:^(NSData *data, NSHTTPURLResponse *httpResponseCode) {
-        
+        NSLog(@"%@",CH_Server(@"/entries?app=assistant"));
       [[ZCNewDataCache shareSingleton] cacheData:data];
         
         [self analyticalData:data];
@@ -55,8 +55,11 @@ static ClassifiedSectionModel *model = nil;
     [self.dataArray removeAllObjects];
     
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    
-    NSArray *array = dic[@"entries"];
+    if ( (NSNull *)[dic objectForKey:@"entries"] == [NSNull null]){
+        
+        return;
+    }
+    NSArray *array = [dic objectForKey:@"entries"];
     
     for (NSDictionary *cid in array) {
         

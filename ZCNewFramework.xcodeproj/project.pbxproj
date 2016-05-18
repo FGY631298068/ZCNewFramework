@@ -76,6 +76,13 @@
 		A52E5B061CEAE6840015D787 /* ClassifiedSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E5B051CEAE6840015D787 /* ClassifiedSectionModel.m */; };
 		A52E5B091CEAED0E0015D787 /* ZCNewClassifiedDataSourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E5B081CEAED0E0015D787 /* ZCNewClassifiedDataSourceModel.m */; };
 		A52E5B0D1CEAFCE50015D787 /* ZCNewDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E5B0C1CEAFCE50015D787 /* ZCNewDataCache.m */; };
+		A52E5B111CEB2E6F0015D787 /* CHClassificationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E5B101CEB2E6F0015D787 /* CHClassificationBar.m */; };
+		A52E5B2C1CEC5BF10015D787 /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E5B201CEC5BF10015D787 /* CoreStatus.m */; };
+		A52E5B2D1CEC5BF10015D787 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E5B261CEC5BF10015D787 /* Reachability.m */; };
+		A52E5B341CEC5FD60015D787 /* left_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52E5B301CEC5FD60015D787 /* left_s@2x.png */; };
+		A52E5B351CEC5FD60015D787 /* left_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52E5B311CEC5FD60015D787 /* left_s@3x.png */; };
+		A52E5B361CEC5FD60015D787 /* Login-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52E5B321CEC5FD60015D787 /* Login-image@2x.png */; };
+		A52E5B371CEC5FD60015D787 /* Login-image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52E5B331CEC5FD60015D787 /* Login-image@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +245,19 @@
 		A52E5B081CEAED0E0015D787 /* ZCNewClassifiedDataSourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNewClassifiedDataSourceModel.m; sourceTree = "<group>"; };
 		A52E5B0B1CEAFCE50015D787 /* ZCNewDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNewDataCache.h; sourceTree = "<group>"; };
 		A52E5B0C1CEAFCE50015D787 /* ZCNewDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNewDataCache.m; sourceTree = "<group>"; };
+		A52E5B0F1CEB2E6F0015D787 /* CHClassificationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHClassificationBar.h; sourceTree = "<group>"; };
+		A52E5B101CEB2E6F0015D787 /* CHClassificationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHClassificationBar.m; sourceTree = "<group>"; };
+		A52E5B1F1CEC5BF10015D787 /* CoreStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatus.h; sourceTree = "<group>"; };
+		A52E5B201CEC5BF10015D787 /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
+		A52E5B221CEC5BF10015D787 /* CoreNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNetworkStatus.h; sourceTree = "<group>"; };
+		A52E5B231CEC5BF10015D787 /* CoreStatusProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusProtocol.h; sourceTree = "<group>"; };
+		A52E5B251CEC5BF10015D787 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A52E5B261CEC5BF10015D787 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A52E5B281CEC5BF10015D787 /* CoreStatusSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusSingleton.h; sourceTree = "<group>"; };
+		A52E5B301CEC5FD60015D787 /* left_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_s@2x.png"; sourceTree = "<group>"; };
+		A52E5B311CEC5FD60015D787 /* left_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_s@3x.png"; sourceTree = "<group>"; };
+		A52E5B321CEC5FD60015D787 /* Login-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login-image@2x.png"; sourceTree = "<group>"; };
+		A52E5B331CEC5FD60015D787 /* Login-image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login-image@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +352,8 @@
 		A52E5A391CEAB5540015D787 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A52E5B2F1CEC5F890015D787 /* Image */,
+				A52E5B0E1CEB2E5C0015D787 /* CustomTools */,
 				A52E5B0A1CEAFC470015D787 /* DataCache */,
 				A52E5A501CEABC270015D787 /* Network */,
 				A52E5A3F1CEAB7130015D787 /* Configuration */,
@@ -358,6 +380,7 @@
 		A52E5A3B1CEAB6AD0015D787 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				A52E5B1E1CEC5BF10015D787 /* CoreStatus */,
 				A52E5A511CEABCBA0015D787 /* FGYReachability */,
 				A52E5A541CEABCBA0015D787 /* FGYWebViewProgress */,
 				A52E5A591CEABCBA0015D787 /* YCMJRefresh */,
@@ -629,6 +652,64 @@
 			path = DataCache;
 			sourceTree = "<group>";
 		};
+		A52E5B0E1CEB2E5C0015D787 /* CustomTools */ = {
+			isa = PBXGroup;
+			children = (
+				A52E5B0F1CEB2E6F0015D787 /* CHClassificationBar.h */,
+				A52E5B101CEB2E6F0015D787 /* CHClassificationBar.m */,
+			);
+			path = CustomTools;
+			sourceTree = "<group>";
+		};
+		A52E5B1E1CEC5BF10015D787 /* CoreStatus */ = {
+			isa = PBXGroup;
+			children = (
+				A52E5B1F1CEC5BF10015D787 /* CoreStatus.h */,
+				A52E5B201CEC5BF10015D787 /* CoreStatus.m */,
+				A52E5B211CEC5BF10015D787 /* Lib */,
+			);
+			path = CoreStatus;
+			sourceTree = "<group>";
+		};
+		A52E5B211CEC5BF10015D787 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A52E5B221CEC5BF10015D787 /* CoreNetworkStatus.h */,
+				A52E5B231CEC5BF10015D787 /* CoreStatusProtocol.h */,
+				A52E5B241CEC5BF10015D787 /* Reachability */,
+				A52E5B271CEC5BF10015D787 /* Singleton */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		A52E5B241CEC5BF10015D787 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A52E5B251CEC5BF10015D787 /* Reachability.h */,
+				A52E5B261CEC5BF10015D787 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		A52E5B271CEC5BF10015D787 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				A52E5B281CEC5BF10015D787 /* CoreStatusSingleton.h */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		A52E5B2F1CEC5F890015D787 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A52E5B301CEC5FD60015D787 /* left_s@2x.png */,
+				A52E5B311CEC5FD60015D787 /* left_s@3x.png */,
+				A52E5B321CEC5FD60015D787 /* Login-image@2x.png */,
+				A52E5B331CEC5FD60015D787 /* Login-image@3x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -734,6 +815,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52E5ABC1CEABCBA0015D787 /* YCMJRefresh.bundle in Resources */,
+				A52E5B371CEC5FD60015D787 /* Login-image@3x.png in Resources */,
+				A52E5B341CEC5FD60015D787 /* left_s@2x.png in Resources */,
+				A52E5B351CEC5FD60015D787 /* left_s@3x.png in Resources */,
+				A52E5B361CEC5FD60015D787 /* Login-image@2x.png in Resources */,
 				A52E5A161CEAB50A0015D787 /* LaunchScreen.storyboard in Resources */,
 				A52E5A131CEAB50A0015D787 /* Assets.xcassets in Resources */,
 				A52E5A111CEAB50A0015D787 /* Main.storyboard in Resources */,
@@ -784,6 +869,7 @@
 				A52E5AC11CEABCBA0015D787 /* UIImage+YCGIF.m in Sources */,
 				A52E5B091CEAED0E0015D787 /* ZCNewClassifiedDataSourceModel.m in Sources */,
 				A52E5AAC1CEABCBA0015D787 /* YCMJRefreshBackFooter.m in Sources */,
+				A52E5B2C1CEC5BF10015D787 /* CoreStatus.m in Sources */,
 				A52E5AFE1CEABE480015D787 /* UIProgressView+AFNetworking.m in Sources */,
 				A52E5AFD1CEABE480015D787 /* UIImageView+AFNetworking.m in Sources */,
 				A52E5AF31CEABE480015D787 /* AFNetworkReachabilityManager.m in Sources */,
@@ -818,9 +904,11 @@
 				A52E5AF51CEABE480015D787 /* AFURLRequestSerialization.m in Sources */,
 				A52E5AB71CEABCBA0015D787 /* YCMJRefreshNormalHeader.m in Sources */,
 				A52E5AC91CEABCBA0015D787 /* YCSDWebImageDecoder.m in Sources */,
+				A52E5B2D1CEC5BF10015D787 /* Reachability.m in Sources */,
 				A52E5AC31CEABCBA0015D787 /* UIImage+YCWebP.m in Sources */,
 				A52E5AB11CEABCBA0015D787 /* YCMJRefreshAutoNormalFooter.m in Sources */,
 				A52E5AB31CEABCBA0015D787 /* YCMJRefreshBackGifFooter.m in Sources */,
+				A52E5B111CEB2E6F0015D787 /* CHClassificationBar.m in Sources */,
 				A52E5ABE1CEABCBA0015D787 /* MKAnnotationView+YCWebCache.m in Sources */,
 				A52E5A4B1CEAB8C60015D787 /* CHNavigationController.m in Sources */,
 				A52E5ACC1CEABCBA0015D787 /* YCSDWebImageManager.m in Sources */,
