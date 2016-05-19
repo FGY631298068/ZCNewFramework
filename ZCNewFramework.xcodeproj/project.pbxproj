@@ -83,6 +83,7 @@
 		A52E5B351CEC5FD60015D787 /* left_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52E5B311CEC5FD60015D787 /* left_s@3x.png */; };
 		A52E5B361CEC5FD60015D787 /* Login-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52E5B321CEC5FD60015D787 /* Login-image@2x.png */; };
 		A52E5B371CEC5FD60015D787 /* Login-image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52E5B331CEC5FD60015D787 /* Login-image@3x.png */; };
+		A52E5B3A1CEC67BD0015D787 /* ZCItemPageScrllview.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E5B391CEC67BD0015D787 /* ZCItemPageScrllview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +259,8 @@
 		A52E5B311CEC5FD60015D787 /* left_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_s@3x.png"; sourceTree = "<group>"; };
 		A52E5B321CEC5FD60015D787 /* Login-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login-image@2x.png"; sourceTree = "<group>"; };
 		A52E5B331CEC5FD60015D787 /* Login-image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login-image@3x.png"; sourceTree = "<group>"; };
+		A52E5B381CEC67BD0015D787 /* ZCItemPageScrllview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCItemPageScrllview.h; sourceTree = "<group>"; };
+		A52E5B391CEC67BD0015D787 /* ZCItemPageScrllview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCItemPageScrllview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,10 +372,12 @@
 		A52E5A3A1CEAB6AD0015D787 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A52E5A461CEAB83D0015D787 /* CHMainViewController.h */,
-				A52E5A471CEAB83D0015D787 /* CHMainViewController.m */,
 				A52E5A491CEAB8C60015D787 /* CHNavigationController.h */,
 				A52E5A4A1CEAB8C60015D787 /* CHNavigationController.m */,
+				A52E5A461CEAB83D0015D787 /* CHMainViewController.h */,
+				A52E5A471CEAB83D0015D787 /* CHMainViewController.m */,
+				A52E5B381CEC67BD0015D787 /* ZCItemPageScrllview.h */,
+				A52E5B391CEC67BD0015D787 /* ZCItemPageScrllview.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -846,6 +851,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52E5B3A1CEC67BD0015D787 /* ZCItemPageScrllview.m in Sources */,
 				A52E5AFA1CEABE480015D787 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A52E5ACA1CEABCBA0015D787 /* YCSDWebImageDownloader.m in Sources */,
 				A52E5AB51CEABCBA0015D787 /* YCMJRefreshBackStateFooter.m in Sources */,

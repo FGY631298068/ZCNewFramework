@@ -30,4 +30,9 @@
  */
 - (void)currentPageItemBecomeselected:(NSInteger)indexPage;
 
+/**
+ *  让item所在的scrollView也滚动
+ */
+- (void)letTheScrollViewTheItemIsAlsoRolling:(NSInteger)indexItem andIsLeftOrRigthBool:(BOOL)isLeftOrRight;
+
 @end

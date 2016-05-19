@@ -8,7 +8,7 @@
 
 #import "CHClassificationBar.h"
 #import "ZCNewClassifiedDataSourceModel.h"
-
+#define UISCREEN ([UIScreen mainScreen].bounds)
 @interface CHClassificationBar ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -37,6 +37,7 @@
     
     self.scrollView.showsHorizontalScrollIndicator = NO;
     
+    self.scrollView.bounces = YES;
     self.scrollView.showsVerticalScrollIndicator   = NO;
     
     [self addSubview:self.scrollView];
@@ -103,12 +104,7 @@
     //如果点击butt是选中状态，就直接接受
     if (indexItem.selected) return;
     
-    for (ZCNewClassifiedDataSourceModel *model in self.itemArray) {
-        
-        UIButton *button = (UIButton *)[self viewWithTag:model.rank];
-        
-        button.selected = NO;
-    }
+    [self changeTheStateOfItme];
     
     indexItem.selected = YES;
     
@@ -123,8 +119,52 @@
 
 - (void)currentPageItemBecomeselected:(NSInteger)indexPage{
     
+    [self changeTheStateOfItme];
+
     UIButton *buttong = (UIButton *)[self viewWithTag:indexPage];
     
     buttong.selected = YES;
+    
 }
+
+//先把所有的itme的selecte = NO;
+- (void)changeTheStateOfItme{
+    
+    for (ZCNewClassifiedDataSourceModel *model in self.itemArray) {
+        
+        UIButton *button = (UIButton *)[self viewWithTag:model.rank];
+        
+        button.selected = NO;
+    }
+}
+
+- (void)letTheScrollViewTheItemIsAlsoRolling:(NSInteger)indexItem andIsLeftOrRigthBool:(BOOL)isLeftOrRight{
+    
+    NSLog(@"%f-----%f",_scrollView.contentSize.width,[UIScreen mainScreen].bounds.size.width);
+    UIButton *button = (UIButton *)[self viewWithTag:indexItem];
+    NSLog(@"%f======%f",button.frame.origin.x,_scrollView.contentOffset.x);
+    
+//    static int ITEM = 1;
+//    if (ITEM <= 4) {
+//        
+//        ITEM ++;
+//    }
+//    if (isLeftOrRight) {
+//        
+//        if (ITEM== 4) {
+//            
+//        }
+//    }
+    if (([UIScreen mainScreen].bounds.size.width - button.frame.origin.x) < 90) {
+      
+   
+     _scrollView.contentOffset = CGPointMake(_scrollView.contentSize.width - UISCREEN.size.width,0);
+        
+    }
+    
+    
+//    [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x +ScrollWidth, 0) animated:YES];
+}
+
+
 @end
